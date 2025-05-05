@@ -38,7 +38,7 @@ const Hero = ({ profileImage }: HeroProps) => {
             </div>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-indigo-700 to-purple-600 bg-clip-text text-transparent">
-              Ameer Hamza
+             Shahan Pervaiz
             </h1>
             
             <h2 className="text-2xl md:text-3xl text-gray-700 mb-6 font-light">

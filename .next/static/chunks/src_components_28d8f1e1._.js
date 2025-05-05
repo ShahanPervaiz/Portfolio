@@ -296,7 +296,7 @@ const Hero = ({ profileImage })=>{
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                     className: "text-5xl md:text-6xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-indigo-700 to-purple-600 bg-clip-text text-transparent",
-                                    children: "Ameer Hamza"
+                                    children: "Shahan Pervaiz"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Hero.tsx",
                                     lineNumber: 40,
@@ -3118,7 +3118,7 @@ const Contact = ()=>{
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                         className: "text-gray-600 mt-1",
-                                                                        children: "+92 (305) 654-9671"
+                                                                        children: "+92 (306) 970-9934"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/Contact.tsx",
                                                                         lineNumber: 229,
@@ -3179,7 +3179,7 @@ const Contact = ()=>{
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                         className: "text-gray-600 mt-1",
-                                                                        children: "ameerhamza4971@gmail.com"
+                                                                        children: "shahanpervaiz25@gmail.com"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/Contact.tsx",
                                                                         lineNumber: 241,
