@@ -44,7 +44,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="md:col-span-1">
             <h2 className="text-2xl font-bold mb-2 bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent">
-              Ameer Hamza
+              Shahan Pervaiz
             </h2>
             <p className="text-gray-400 mb-6">Full Stack Developer</p>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
@@ -217,7 +217,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            &copy; {currentYear} Ameer Hamza. All rights reserved.
+            &copy; {currentYear} Shahan Pervai. All rights reserved.
           </p>
           
           <div className="mt-4 md:mt-0 flex space-x-6">

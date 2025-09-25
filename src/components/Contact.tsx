@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import emailjs from "emailjs-com";
+
 
 const Contact = () => {
   const [ref, inView] = useInView({
@@ -27,27 +29,31 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitSuccess(true);
-      
-      // Reset form after showing success message
-      setTimeout(() => {
-        setSubmitSuccess(false);
-        setFormState({
-          name: '',
-          email: '',
-          subject: '',
-          message: ''
-        });
-      }, 3000);
-    }, 1500);
-  };
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  try {
+    await emailjs.send(
+      "service_s9dr64d",
+      "template_ilkb7hw",
+      formState,
+      "4uOc_luWqqCxkKY-T"
+    );
+
+    setSubmitSuccess(true);
+    setFormState({ name: "", email: "", subject: "", message: "" });
+
+    setTimeout(() => setSubmitSuccess(false), 3000);
+  } catch (error) {
+    console.error("Email send failed:", error);
+    alert("Failed to send message ❌");
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+  console.log(formState,"formState");
+  
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -132,7 +138,7 @@ const Contact = () => {
                       value={formState.name}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors"
-                      placeholder="John Doe"
+                      placeholder="Full Name"
                       required
                     />
                   </div>
@@ -145,7 +151,7 @@ const Contact = () => {
                       value={formState.email}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors"
-                      placeholder="john@example.com"
+                      placeholder="@example.com"
                       required
                     />
                   </div>
